@@ -1,0 +1,138 @@
+       :root {
+          --color-main: #f47458;
+          --black: #000000;
+          --gray: #8692a6;
+          --gray-50: #696F79;
+          --gray-100: #494949;
+      }
+      
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: 'Inter', sans-serif;
+          font-size: 15px;
+      }
+      
+      a {
+          text-decoration: none;
+          color: inherit;
+      }
+      
+      input,
+      button {
+          background: none;
+          border: none;
+          font: inherit;
+      }
+      
+      main {
+          display: grid;
+          gap: 1rem;
+          height: 100vh;
+      }
+      
+      .section-img {
+          background-color: #ffceae;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .section-img img {
+          max-width: 200px;
+          width: 100%;
+      }
+      
+      .form-login {
+          padding: 1rem 0;
+          display: grid;
+          gap: 1.5rem;
+          width: 100%;
+      }
+      
+      .container {
+          padding: 1rem;
+      }
+      
+      h1 {
+          font-size: 1.8rem;
+          color: var(--black);
+          font-weight: 700;
+          margin-bottom: 5px;
+      }
+      
+      p {
+          color: var(--gray-50);
+          font-weight: 400;
+          line-height: 27px;
+          margin-bottom: 10px;
+      }
+      
+      hr {
+          border-top: 1px dotted gainsboro;
+      }
+      
+      label {
+          color: var(--gray-50);
+          font-weight: 500;
+      }
+      
+      input {
+          width: 100%;
+          border: 1px solid #8692a6;
+          outline: none;
+          padding: 1rem;
+          margin-top: 10px;
+          border-radius: 6px;
+      }
+      
+      input:focus {
+          border: 1px solid var(--color-main);
+      }
+      
+      .remember {
+          display: inline-flex;
+          align-items: center;
+          text-align: left;
+          gap: 0.4rem;
+      }
+      
+      .remember input {
+          width: auto;
+          margin-top: 0;
+      }
+      
+      button {
+          background-color: var(--color-main);
+          color: white;
+          padding: 1rem;
+          cursor: pointer;
+          border-radius: 6px;
+          outline: none;
+      }
+      
+      a {
+          color: var(--color-main);
+      }
+      /* resposive */
+      
+      @media(min-width: 768px) {
+          main {
+              grid-template-columns: 1fr 1fr;
+          }
+          .container {
+              display: flex;
+              flex-direction: column;
+              max-width: 28rem;
+              justify-content: center;
+              width: 100%;
+              margin: 0 auto;
+          }
+          .section-img img {
+              max-width: 100%;
+              width: 100%;
+              margin-top: -200px;
+          }
+      }
